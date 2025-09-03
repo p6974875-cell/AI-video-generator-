@@ -1,21 +1,17 @@
 {
-  "name": "feydey-backend",
+  "name": "frontend",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "private": true,
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "axios": "^1.6.7",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.3"
-  }
+  "proxy": "http://localhost:5000"
 }
